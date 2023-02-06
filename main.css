@@ -6,7 +6,6 @@
   --bg-alt:      #f2f2f6;
   --fg-main:     #0a0a0a;
   --fg-alt:      #212121;
-  --fg-pale:     #8d8d8d;
   --fg-link:     #1b4f99;
   --fg-link-alt: #991b8c;
   --bg-nav:      #64897a;
@@ -15,11 +14,21 @@
   --tbl-row-alt: #eaeaea;
 }
 
-/* TODO: dark variant.
+/* Dark variant. */
 @media (prefers-color-scheme: dark) {
-  :root { }
+  :root {
+    --bg-main:     #212121;
+    --bg-alt:      #303030;
+    --fg-main:     #e4e4e4;
+    --fg-alt:      #212121;
+    --fg-link:     #80bdf7;
+    --fg-link-alt: #ba80f7;
+    --bg-nav:      #44aa9d;
+    --bg-intro:    #424242;
+    --tbl-border:  #424242;
+    --tbl-row-alt: #303030;
+  }
 }
-*/
 
 
 
@@ -93,8 +102,8 @@ a pre, a code { color: var(--fg-link); }
 a:hover pre, a:hover code { color: var(--fg-link-alt); }
 
 blockquote {
-  color: var(--fg-alt);
-  border-left: 3px solid var(--fg-pale);
+  color: var(--tbl-main);
+  border-left: 3px solid var(--tbl-border);
   margin-right: 0;
   padding-right: 15px;
   margin-left: 0;
