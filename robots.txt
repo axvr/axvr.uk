@@ -1,10 +1,12 @@
 User-agent: *
 Disallow: /contact/
 Disallow: /projects/contributions/
+Disallow: /projects/teg/
 
 # User-agent: ia_archiver
 # Disallow: /
 
+# ----------------------------
 # Block nasty bots.
 
 User-agent: SemrushBot
@@ -41,4 +43,7 @@ User-agent: DataForSeoBot
 Disallow: /
 
 User-agent: Roverbot
+Disallow: /
+
+User-agent: GPTBot
 Disallow: /
